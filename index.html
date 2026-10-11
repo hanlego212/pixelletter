@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffd9e8">
+<title>A Little Love Letter for Abdulrahman ♡</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+  :root{--pink:#ffd9e8;--pink2:#ffb8d0;--hot:#e85b91;--cream:#fff8e9;--ink:#542d4a;--purple:#8b5ca8}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;overflow-x:hidden;background:#ffe8f0;color:var(--ink);font-family:'VT323',monospace;font-size:22px;image-rendering:pixelated}
+  body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.26;background-image:radial-gradient(#e85b91 1.3px,transparent 1.3px);background-size:22px 22px;z-index:-1}
+  .sky{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:-1}
+  .star{position:absolute;color:#fff;font-family:'Press Start 2P';font-size:12px;animation:twinkle 2s steps(2,end) infinite}
+  @keyframes twinkle{50%{opacity:.25;transform:scale(.8)}}
+  .wrap{width:min(920px,94%);margin:0 auto;padding:30px 0 55px;text-align:center}
+  .top-label{font:10px 'Press Start 2P';line-height:1.9;color:#a84b78;margin:10px 0 22px}
+  h1{font:clamp(16px,3vw,25px)/1.8 'Press Start 2P';color:#c9437b;text-shadow:3px 3px 0 #ffc0d6;margin:0 0 12px}
+  .subtitle{font-size:28px;margin-bottom:22px}
+  .pixel-box{background:var(--cream);border:4px solid var(--ink);box-shadow:8px 8px 0 #eaa1bf, inset 0 0 0 4px #ffe2ed;padding:22px}
+  .scene{margin:26px auto 24px;max-width:570px}
+  .hint{font-size:25px;margin:16px 0 8px}
+  .envelope-button{border:0;background:transparent;cursor:pointer;padding:12px;display:block;margin:0 auto;transition:transform .18s;image-rendering:pixelated}
+  .envelope-button:hover{transform:translateY(-5px) scale(1.03)}
+  .envelope-button:focus-visible,button:focus-visible{outline:4px dashed #8b5ca8;outline-offset:5px}
+  .envelope{position:relative;width:min(300px,70vw);height:190px;margin:15px auto 0;filter:drop-shadow(6px 7px 0 #e9a0bd)}
+  .env-back{position:absolute;inset:0;background:#f68db5;border:5px solid var(--ink)}
+  .env-back:before{content:"";position:absolute;left:0;right:0;top:0;margin:auto;width:0;height:0;border-left:145px solid transparent;border-right:145px solid transparent;border-top:112px solid #ffb5cf}
+  .env-front{position:absolute;inset:0;background:#f4a1c1;clip-path:polygon(0 100%,0 43%,50% 76%,100% 43%,100% 100%);border-bottom:5px solid var(--ink)}
+  .env-flap{position:absolute;left:0;right:0;top:0;margin:auto;width:0;height:0;border-left:145px solid transparent;border-right:145px solid transparent;border-top:112px solid #e96f9e;transform-origin:top;transition:transform .7s steps(5)}
+  .seal{position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);font-size:40px;text-shadow:3px 3px #b83d73}
+  .envelope-button.opened .env-flap{transform:rotateX(180deg);z-index:-1}
+  .envelope-button.opened .seal{opacity:0;transition:opacity .2s}
+  .letter{display:none;text-align:left;max-width:650px;margin:30px auto 0;animation:pop .45s steps(4,end)}
+  .letter.show{display:block}
+  @keyframes pop{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+  .letter-head{font:10px/2 'Press Start 2P';color:#d14f84;text-align:center;margin-bottom:18px}
+  #typed{font-size:29px;line-height:1.5;white-space:pre-wrap;min-height:190px}
+  .cursor{display:inline-block;width:10px;height:23px;background:#d94d87;vertical-align:middle;animation:blink .7s steps(2,end) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .signature{text-align:right;font-size:27px;color:#bd3f78;margin-top:15px}
+  .secret-wrap{margin:24px auto 0;text-align:center}
+  .secret-btn,.again-btn{font:9px/1.8 'Press Start 2P';color:#fff;background:#d94d87;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink);padding:13px 15px;cursor:pointer}
+  .secret-btn:hover,.again-btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+  .secret{display:none;margin:22px auto 0;padding:18px;border:3px dashed #e47aa3;background:#fff0f6;text-align:center;line-height:1.5;font-size:27px}
+  .secret.show{display:block;animation:pop .35s steps(4,end)}
+  .heart-row{font-size:24px;letter-spacing:8px;margin:18px 0}
+  .footer{font-size:21px;color:#a54b78;margin-top:30px}
+  .float-heart{position:fixed;bottom:-35px;pointer-events:none;z-index:5;animation:rise linear forwards}
+  @keyframes rise{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+  .tiny{font-size:17px;opacity:.75;margin-top:12px}
+  @media(max-width:520px){.wrap{padding-top:20px}.pixel-box{padding:15px}.envelope{height:155px}.env-back:before{border-left-width:calc(min(35vw,105px));border-right-width:calc(min(35vw,105px));border-top-width:90px}.env-flap{border-left-width:calc(min(35vw,105px));border-right-width:calc(min(35vw,105px));border-top-width:90px}.env-front{clip-path:polygon(0 100%,0 43%,50% 76%,100% 43%,100% 100%)}#typed{font-size:25px}.letter-head{font-size:8px}}
+  @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="sky" id="sky" aria-hidden="true"></div>
+<main class="wrap">
+  <div class="top-label">♡ PLAYER 1: YOU &nbsp; • &nbsp; PLAYER 2: ABDULRAHMAN ♡</div>
+  <h1>A LITTLE LOVE LETTER</h1>
+  <div class="subtitle">for my favorite person <span aria-hidden="true">♡</span></div>
+  <section class="scene pixel-box">
+    <div class="top-label">✦ NEW MESSAGE UNLOCKED ✦</div>
+    <button class="envelope-button" id="envelopeBtn" aria-label="Open the love letter">
+      <div class="envelope" aria-hidden="true">
+        <div class="env-back"></div><div class="env-flap"></div><div class="env-front"></div>
+        <div class="seal">♥</div>
+      </div>
+    </button>
+    <div class="hint" id="hint">A tiny letter is waiting for you...</div>
+    <div class="tiny">press the envelope to open ♡</div>
+  </section>
+
+  <section class="letter pixel-box" id="letter" aria-live="polite">
+    <div class="letter-head">✦ TO: ABDULRAHMAN ✦<br>FROM: SOMEONE WHO ADORES YOU</div>
+    <div id="typed"></div><span class="cursor" id="cursor" aria-hidden="true"></span>
+    <div class="signature" id="signature" hidden>always yours, ♡</div>
+    <div class="heart-row" aria-hidden="true">♡ ♥ ♡ ♥ ♡</div>
+    <div class="secret-wrap">
+      <button class="secret-btn" id="secretBtn">UNLOCK A SECRET ♡</button>
+      <div class="secret" id="secret" aria-live="polite">
+        <div style="font-size:38px">💗 ✦ 💗</div>
+        <strong>SECRET MESSAGE UNLOCKED!</strong><br>
+        If I could choose my favorite person in every universe, in every timeline, and in every little pixel world...<br><strong>I'd still choose you, Abdulrahman.</strong><br>
+        <div class="heart-row">♥ ♥ ♥</div>
+        <button class="again-btn" id="heartBtn">SEND MORE HEARTS</button>
+      </div>
+    </div>
+  </section>
+  <div class="footer">made with all my little pixels and all my heart ♡</div>
+</main>
+<script>
+const sky = document.getElementById('sky');
+for(let i=0;i<35;i++){
+  const s=document.createElement('span');s.className='star';s.textContent=i%3===0?'✦':'.';
+  s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';
+  s.style.animationDelay=(Math.random()*2)+'s';sky.appendChild(s);
+}
+const message = `Dear Abdulrahman,\n\nIf my heart were a little pixel world, you would be its favorite place. You make ordinary days feel like the sweetest kind of magic, and even the smallest moments feel special.\n\nI wish I could collect every smile you give me and keep them like tiny hearts in my inventory. No matter how many levels life has, I hope we keep finding little reasons to laugh, care for each other, and make beautiful memories.\n\nYou are my favorite notification, my soft place to land, and the person I'd pick in every game. This little letter is small, but the feeling behind it is bigger than all the pixels in the world.\n\nI'm so glad you exist. ♡`;
+const btn=document.getElementById('envelopeBtn'), letter=document.getElementById('letter'), hint=document.getElementById('hint');
+const typed=document.getElementById('typed'), cursor=document.getElementById('cursor'), signature=document.getElementById('signature');
+let opened=false, typingTimer;
+function burst(count=12){
+  const symbols=['♥','♡','✦','💗'];
+  for(let i=0;i<count;i++){
+    const h=document.createElement('span');h.className='float-heart';h.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+    h.style.left=(Math.random()*94+3)+'vw';h.style.color=['#e85b91','#bd68a5','#f07a9e','#9b73bd'][Math.floor(Math.random()*4)];
+    h.style.fontSize=(18+Math.random()*22)+'px';h.style.animationDuration=(2.5+Math.random()*2.5)+'s';
+    document.body.appendChild(h);setTimeout(()=>h.remove(),5200);
+  }
+}
+function typeMessage(){
+  let i=0;typed.textContent='';cursor.hidden=false;signature.hidden=true;
+  clearInterval(typingTimer);
+  typingTimer=setInterval(()=>{
+    typed.textContent=message.slice(0,i++);
+    if(i>message.length){clearInterval(typingTimer);cursor.hidden=true;signature.hidden=false;burst(18);}
+  },27);
+}
+btn.addEventListener('click',()=>{
+  if(opened)return;opened=true;btn.classList.add('opened');btn.setAttribute('aria-label','Love letter opened');
+  hint.textContent='A little message, just for you ♡';letter.classList.add('show');
+  setTimeout(()=>{letter.scrollIntoView({behavior:'smooth',block:'center'});typeMessage();burst(20)},420);
+});
+document.getElementById('secretBtn').addEventListener('click',()=>{
+  const secret=document.getElementById('secret');secret.classList.toggle('show');
+  document.getElementById('secretBtn').textContent=secret.classList.contains('show')?'CLOSE SECRET ♡':'UNLOCK A SECRET ♡';
+  if(secret.classList.contains('show'))burst(24);
+});
+document.getElementById('heartBtn').addEventListener('click',()=>burst(55));
+</script>
+</body>
+</html>
